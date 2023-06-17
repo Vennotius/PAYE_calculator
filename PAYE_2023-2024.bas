@@ -1,5 +1,6 @@
 Attribute VB_Name = "Module1"
 
+'  The ranges that it will reference in Excel could look like this:
 '  Threshold    UpperLimit         Percentage
 '  -            95 750.00          0%
 '  95750        237100.00          18%
