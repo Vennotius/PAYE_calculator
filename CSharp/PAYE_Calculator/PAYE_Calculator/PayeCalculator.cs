@@ -67,7 +67,7 @@
 
             decimal candidateTarget = 0;
 
-            while (Math.Abs(upperBound - lowerBound) > 0.0001M)
+            while (Math.Abs(upperBound - lowerBound) > 0.001M)
             {
                 decimal middle = (upperBound + lowerBound) / 2;
 
@@ -83,7 +83,7 @@
                 candidateTarget = middle;
             }
 
-            return candidateTarget;
+            return Math.Round(candidateTarget, 3);
         }
     }
 }
