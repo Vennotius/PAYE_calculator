@@ -14,7 +14,7 @@
                 (1817000, decimal.MaxValue, 0.45M ),
             };  // 2023-2024. cf https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/
 
-        private static readonly decimal _maxUif = 117.12M;  // 2023-2024. cf https://www.sars.gov.za/types-of-tax/unemployment-insurance-fund/
+        private static readonly decimal _maxUif = 177.12M;  // 2023-2024. cf https://www.sars.gov.za/types-of-tax/unemployment-insurance-fund/
 
         public static decimal GetNettoFromBruto(decimal brutoMonthlyIncome)
             => GetNettoFromBruto(_bracketsInfo, brutoMonthlyIncome, _maxUif);
